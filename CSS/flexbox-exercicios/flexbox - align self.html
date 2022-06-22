@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox - align self</title>
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 350px;
+            margin-bottom: 10px;
+
+        
+        }
+
+        .align-container{
+            align-items: center;
+        }
+        .item{
+            background-color: purple;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .start{
+            align-self: flex-start;
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .strech{
+            align-self: stretch;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+        .colunas{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>LINHAS</h2>
+    <h3>AUTO</h3>
+    <section class="container align-container">
+
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">LIoasjajiosa aosioajsioajsa</div>
+        <div class="item auto">ITEM 4</div>
+
+    </section>
+
+    <h3>MIX</h3>
+    <section class="container">
+
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item strech">Lorem ipsum is therefore always free from repetition</div>
+        <div class="item end">ITEM 4</div>
+
+    </section>
+
+    <h2>COLUNAS</h2>
+
+    <h3>AUTO</h3>
+    <section class="container align-container colunas">
+
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">LIoasjajiosa aosioajsioajsa</div>
+        <div class="item auto">ITEM 4</div>
+
+    </section>
+
+    <h3>MIX</h3>
+    <section class="container colunas">
+
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item strech">Lorem ipsum is therefore always free from repetition</div>
+        <div class="item end">ITEM 4</div>
+
+    </section>
+
+</body>
+</html>
