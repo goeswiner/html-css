@@ -1,0 +1,23 @@
+.menu {
+    width: 100%;
+}
+
+.menu__link {
+    color: #333;
+    padding: .5rem 1rem;
+}
+
+.menu__link:hover, .menu__link.ativo {
+    border-bottom: 2px solid #0073e6;
+}
+
+.menu__lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo { 
+    width: 40px;
+    height: 60px;
+}
